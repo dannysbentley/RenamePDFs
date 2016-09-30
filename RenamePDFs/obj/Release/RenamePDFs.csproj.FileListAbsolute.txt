@@ -1,0 +1,9 @@
+F:\PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\bin\Release\RenamePDFs.dll
+F:\PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\bin\Release\RenamePDFs.pdb
+F:\PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\obj\Release\RenamePDFs.dll
+F:\PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\obj\Release\RenamePDFs.pdb
+F:\00-PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\bin\Release\RenamePDFs.dll
+F:\00-PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\bin\Release\RenamePDFs.pdb
+F:\00-PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\obj\Release\RenamePDFs.csprojResolveAssemblyReference.cache
+F:\00-PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\obj\Release\RenamePDFs.dll
+F:\00-PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\obj\Release\RenamePDFs.pdb

@@ -1,0 +1,62 @@
+<Workspace Version="1.1.0.2094" X="-33.1126333240536" Y="17.5674756603245" zoom="0.760571702515086" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="7c213a47-0238-49d7-bebb-b2f0d6e301e5" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Rename PDFs" x="771.816023738873" y="621.988968713173" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="3" default="True" />
+      <ID value="602926e9-e4d1-4373-b7f0-c5077091284e" />
+      <Name value="Rename PDFs" />
+      <Description value="Rename PDFs using Regular Expressions.  Copy new renamed PDFs to new directory. &#xD;&#xA;&#xD;&#xA;http://revitdynamoapi.blogspot.com/2016_09_01_archive.html" />
+      <Inputs>
+        <Input value="sourcePath" />
+        <Input value="targetPath" />
+        <Input value="Regular Expression" />
+        <Input value="Replace_Dash" />
+      </Inputs>
+      <Outputs>
+        <Output value="filesMovedandRenamed" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <CoreNodeModels.Input.Directory guid="86dfd1be-3fba-4c04-a94e-9408f98faaa3" type="CoreNodeModels.Input.Directory" nickname="Directory Path" x="334.515046719126" y="491.79724002931" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>C:\Users\danny.bentley\Documents</System.String>
+      <HintPath>C:\Users\danny.bentley\Documents</HintPath>
+    </CoreNodeModels.Input.Directory>
+    <CoreNodeModels.Input.Directory guid="9e9e5d77-083e-4517-8e2e-92a28d757eb7" type="CoreNodeModels.Input.Directory" nickname="Directory Path" x="334.515046719126" y="646.34752319458" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>C:\Users\danny.bentley\Documents\file move</System.String>
+      <HintPath>C:\Users\danny.bentley\Documents\file move</HintPath>
+    </CoreNodeModels.Input.Directory>
+    <CoreNodeModels.Watch guid="33708956-a32b-4685-9a13-539952f75e47" type="CoreNodeModels.Watch" nickname="Watch" x="1182.21602373887" y="620.311895325519" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="6e4209bf-1d2f-47ea-afbf-ea3c24f4dfdf" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Regex" x="330.407848936039" y="1120.17464771888" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="// S digit ad digit&#xA;&quot;S\d.\d.*&quot;;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="b3e3c400-63e5-4df0-8a7e-f6716f7751d8" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Regex" x="332.313576072071" y="801.839374355828" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="// S digit [a to z, A to Z, 0 to 9]&#xA;&quot;S\d.[a-zA-Z0-9_.-].*&quot;;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="59866343-ef2c-4a8e-af8e-b3f7a988cb72" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="581.883506867876" y="907.768384249945" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;.&quot;;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="9a535a23-7302-4a33-86a2-8ead1383aade" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="42" y="1034" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;\d\w\W\w\d\d\W\d\d\w?&quot;;" ShouldFocus="false" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="7c213a47-0238-49d7-bebb-b2f0d6e301e5" start_index="0" end="33708956-a32b-4685-9a13-539952f75e47" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="86dfd1be-3fba-4c04-a94e-9408f98faaa3" start_index="0" end="7c213a47-0238-49d7-bebb-b2f0d6e301e5" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="9e9e5d77-083e-4517-8e2e-92a28d757eb7" start_index="0" end="7c213a47-0238-49d7-bebb-b2f0d6e301e5" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="59866343-ef2c-4a8e-af8e-b3f7a988cb72" start_index="0" end="7c213a47-0238-49d7-bebb-b2f0d6e301e5" end_index="3" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="9a535a23-7302-4a33-86a2-8ead1383aade" start_index="0" end="7c213a47-0238-49d7-bebb-b2f0d6e301e5" end_index="2" portType="0" />
+  </Connectors>
+  <Notes>
+    <Dynamo.Graph.Notes.NoteModel guid="3c01d26d-c247-405b-9427-a97450c7c238" text="original file location. " x="334.515046719126" y="432.272359377469" />
+    <Dynamo.Graph.Notes.NoteModel guid="17a9b762-2819-4404-8559-994b56801b4b" text="location of files to move to. " x="335.353583412952" y="597.589967967396" />
+    <Dynamo.Graph.Notes.NoteModel guid="b6ee56a7-1214-443f-a6b5-eeb820024e56" text="regular expression &#xD;&#xA;http://regexr.com/" x="334.435888209001" y="747.119984414197" />
+  </Notes>
+  <Annotations>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="7c2c60a1-faf0-4b39-80bd-f2486f482f6e" annotationText="Rename PDFs" left="320.407848936039" top="379.272359377469" width="1054.80817480283" height="842.902288341411" fontSize="36" InitialTop="432.272359377469" InitialHeight="449.713946587537" TextblockHeight="43" backgrouund="#FF848484">
+      <Models ModelGuid="7c213a47-0238-49d7-bebb-b2f0d6e301e5" />
+      <Models ModelGuid="86dfd1be-3fba-4c04-a94e-9408f98faaa3" />
+      <Models ModelGuid="9e9e5d77-083e-4517-8e2e-92a28d757eb7" />
+      <Models ModelGuid="33708956-a32b-4685-9a13-539952f75e47" />
+      <Models ModelGuid="b3e3c400-63e5-4df0-8a7e-f6716f7751d8" />
+      <Models ModelGuid="3c01d26d-c247-405b-9427-a97450c7c238" />
+      <Models ModelGuid="17a9b762-2819-4404-8559-994b56801b4b" />
+      <Models ModelGuid="b6ee56a7-1214-443f-a6b5-eeb820024e56" />
+      <Models ModelGuid="6e4209bf-1d2f-47ea-afbf-ea3c24f4dfdf" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>

@@ -1,0 +1,5 @@
+F:\PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\obj\Debug\RenamePDFs.csprojResolveAssemblyReference.cache
+F:\PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\bin\Debug\RenamePDFs.dll
+F:\PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\bin\Debug\RenamePDFs.pdb
+F:\PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\obj\Debug\RenamePDFs.dll
+F:\PROGRAMING - DYNAMO\RenamePDFs\RenamePDFs\obj\Debug\RenamePDFs.pdb
